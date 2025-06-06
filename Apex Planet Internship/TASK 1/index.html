@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <script src="javscript.js"></script>
+  <title>Apex Planet Internship</title>
+  
+</head>
+<body>
+  <header>
+    <div class="container" role="banner">
+      <h1>Sample Webpage</h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="#content" tabindex="0">Content</a>
+        <a href="#button-alert" tabindex="0">Button</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" role="region" aria-labelledby="hero-title">
+      <h2 id="hero-title">Welcome to Our Simple Webpage</h2>
+      <p>Learn basic HTML structure with styling and interaction in a clean, modern design.</p>
+      <button class="cta-button" id="button-alert" aria-describedby="alert-desc">Click Me For Alert</button>
+      <p id="alert-desc" class="sr-only">Clicking this button will trigger a pop-up alert.</p>
+    </section>
+
+    <section class="content" id="content">
+      <h3>About This Page</h3>
+      <p>This webpage demonstrates basic HTML elements including headings, paragraphs, images, links, styled with CSS, and a simple JavaScript interaction.</p>
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Serene mountain landscape" />
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 Sample Webpage Webpage. All rights reserved. <br>
+    Jayesh Dhariyal
+  </footer>
+
+  <script>
+    // JavaScript for button alert interaction
+    document.getElementById('button-alert').addEventListener('click', function () {
+      alert('Alert!!! You clicked the Alert button!');
+    });
+  </script>
+
+</body>
+</html>
+
